@@ -10,7 +10,7 @@ body{
     background-color:blue;
 }
 div#container{
-    width:120px;
+    width:1200px;
   height: 800px;
     background-color:rebeccapurple;
     border:3px dashed orange;
@@ -21,8 +21,14 @@ header{
     padding: 25px;
     background-color: white;
 }
+header  img#applogo{
+    display: block;
+    margin: auto;
+    width: 100px;
+}
 header h1{
     color:purple;
+    text-align: center;
     font-family:bold;
     font-size:2em;
 }
@@ -89,7 +95,7 @@ icon-bar{
     background-color: #000;
 }
 .active{
-    background-color: #ffa20e;
+    background-color: green;
 }
 
 /*
