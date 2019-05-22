@@ -7,18 +7,19 @@ html,body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,li,header,footer,nav{
 }
 
 body{
+    width: auto;
     background-color:blue;
 }
 div#container{
-    width:1200px;
+    width:100%;
   height: 800px;
     background-color:rebeccapurple;
     border:3px dashed orange;
     
 }
 header{
-    width:94.2%;
-    padding: 25px;
+    width:auto;
+    padding: 50px;
     background-color: white;
 }
 header  img#applogo{
@@ -32,21 +33,39 @@ header h1{
     font-family:bold;
     font-size:2em;
 }
+
+h2{
+    font-size: 5em;
+    color: white;
+    text-align: center;
+}
+
 header h3 {
     color: white;
     text-align: center;
     font-family: fantasy;
     font-size: 5em;
 }
-
-div#product_grp{
+h6{
+    color: white;
+}
+h7{
+    font-size: 1.6em;
+    color: white;
+}
+figcaption{
+    color: white;
+    font-size: 3em;
+}
+div#sonic_grp{
     max-width:80%;
     min-width:20%;
+    
     margin:auto;
 }
 figure.product{
     float:left;
-    margin:10px;
+    margin:4px;
     min-width: 30%;
     max-width: 50%;
     background-color: cadetblue;
@@ -54,16 +73,36 @@ figure.product{
 }
 figure.product img{
     display:block;
-    padding:10px 0;
+    padding: 10px 0;
     width: 80%;
     margin:auto;
 }
+
+
+
 figure.product figcaption{
     text-align: center;
     color:white;
-    font-family: fantasy;
+    font-family: bold;
     font-size:24px;
 }
+
+
+img#ref{
+				display: block;
+				width:200px;
+				height:auto;
+				border-radius:50%;
+				border:solid 5px orange;
+				position:absolute;
+				left:500px;
+				top:200px;
+				z-index:1;
+				transition: 2s;
+			}
+			img#batfleck:hover{
+				width:500px;
+			}
 /*
 
 nav ul{
@@ -130,14 +169,28 @@ icon-bar{
     background-color: green;
 }
 
-/*
-@media screen and (max-width: 600px){
-    div#container{
-        width:100%
-    }
-    nav ul li a{
-        float:none;
-        text-align: center;
-    }
-*/
+
+@media screen and (max-width: 800px){
+    figure.product{
+		float:none;
+		margin:10px auto;
+		min-width:50%;
+		max-width:100%;
+		background-color: cadetblue;
+		border-radius:5%;
 }
+    figure.product figcaption{
+        text-align: center;
+        color: white;
+        font-family: bold;
+        font-size: 12px;
+        
+    }
+    
+    legend, span, input, textarea{
+        display: block;
+        margin: auto;
+        text-align: center;
+        font-family: sans-serif;
+        color: white;
+    }
